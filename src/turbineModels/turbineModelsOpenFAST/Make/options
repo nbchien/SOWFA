@@ -11,7 +11,8 @@ EXE_INC = \
     -I$(LIB_SRC)/transportModels \
     $(PFLAGS) \
     $(PINC) \
-    -I$(OPENFAST_DIR)/include
+    -I$(OPENFAST_DIR)/include \ # <--  Add this backslash 
+    -I$(HDF5_DIR)/include  # >-- and add this line
 
 LIB_LIBS = \
     -ltriSurface \
@@ -45,5 +46,8 @@ LIB_LIBS = \
     -lscfastlib \
     -lsctypeslib \
     -lservodynlib \
-    -lsubdynlib 
+    -lsubdynlib \  # <-- Add this backslash
+    -L$(HDF5_DIR)/lib \ # and add the next three lines
+    -lhdf5 \
+    -lhdf5_hl
 
