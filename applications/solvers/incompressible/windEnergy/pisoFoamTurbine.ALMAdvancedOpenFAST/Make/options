@@ -13,6 +13,7 @@ EXE_INC = \
     $(PFLAGS) \
     $(PINC) \
     -I$(OPENFAST_DIR)/include \
+    -I$(HDF5_DIR)/include
 
 EXE_LIBS = \
     -L$(SOWFA_DIR)/lib/$(WM_OPTIONS) \
@@ -52,6 +53,7 @@ EXE_LIBS = \
     -lsctypeslib \
     -lservodynlib \
     -lsubdynlib \
+    -lversioninfolib \
     $(BLASLIB) \
     -L$(HDF5_DIR)/lib/ \
     -lhdf5_hl \
