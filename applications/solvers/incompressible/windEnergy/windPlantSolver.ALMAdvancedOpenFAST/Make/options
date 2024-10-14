@@ -55,6 +55,7 @@ EXE_LIBS = \
     -lsctypeslib \
     -lservodynlib \
     -lsubdynlib \
+    -lversioninfolib \
     $(BLASLIB) \
     -L$(HDF5_DIR)/lib/ \
     -lhdf5_hl \
